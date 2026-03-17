@@ -1,0 +1,388 @@
+==========================================
+[2026-03-16 18:06:35] Starting: bun install
+==========================================
+[BUN] Installing dependencies...
+[0.44ms] ".env"
+bun install v1.3.10 (30e609e0)
+
++ @tailwindcss/postcss@4.1.18
++ @types/react@19.2.8
++ @types/react-dom@19.2.3
++ bun-types@1.3.6
++ eslint@9.39.2
++ eslint-config-next@16.1.3
++ tailwindcss@4.1.18
++ tw-animate-css@1.4.0
++ typescript@5.9.3
++ @dnd-kit/core@6.3.1
++ @dnd-kit/sortable@10.0.0
++ @dnd-kit/utilities@3.2.2
++ @hookform/resolvers@5.2.2
++ @mdxeditor/editor@3.52.3
++ @prisma/client@6.19.2
++ @radix-ui/react-accordion@1.2.12
++ @radix-ui/react-alert-dialog@1.1.15
++ @radix-ui/react-aspect-ratio@1.1.8
++ @radix-ui/react-avatar@1.1.11
++ @radix-ui/react-checkbox@1.3.3
++ @radix-ui/react-collapsible@1.1.12
++ @radix-ui/react-context-menu@2.2.16
++ @radix-ui/react-dialog@1.1.15
++ @radix-ui/react-dropdown-menu@2.1.16
++ @radix-ui/react-hover-card@1.1.15
++ @radix-ui/react-label@2.1.8
++ @radix-ui/react-menubar@1.1.16
++ @radix-ui/react-navigation-menu@1.2.14
++ @radix-ui/react-popover@1.1.15
++ @radix-ui/react-progress@1.1.8
++ @radix-ui/react-radio-group@1.3.8
++ @radix-ui/react-scroll-area@1.2.10
++ @radix-ui/react-select@2.2.6
++ @radix-ui/react-separator@1.1.8
++ @radix-ui/react-slider@1.3.6
++ @radix-ui/react-slot@1.2.4
++ @radix-ui/react-switch@1.2.6
++ @radix-ui/react-tabs@1.1.13
++ @radix-ui/react-toast@1.2.15
++ @radix-ui/react-toggle@1.1.10
++ @radix-ui/react-toggle-group@1.1.11
++ @radix-ui/react-tooltip@1.2.8
++ @reactuses/core@6.1.9
++ @tanstack/react-query@5.90.19
++ @tanstack/react-table@8.21.3
++ class-variance-authority@0.7.1
++ clsx@2.1.1
++ cmdk@1.1.1
++ date-fns@4.1.0
++ embla-carousel-react@8.6.0
++ framer-motion@12.26.2
++ input-otp@1.4.2
++ lucide-react@0.525.0
++ next@16.1.3
++ next-auth@4.24.13
++ next-intl@4.7.0
++ next-themes@0.4.6
++ prisma@6.19.2
++ react@19.2.3
++ react-day-picker@9.13.0
++ react-dom@19.2.3
++ react-hook-form@7.71.1
++ react-markdown@10.1.0
++ react-resizable-panels@3.0.6
++ react-syntax-highlighter@15.6.6
++ recharts@2.15.4
++ sharp@0.34.5
++ sonner@2.0.7
++ tailwind-merge@3.4.0
++ tailwindcss-animate@1.0.7
++ uuid@11.1.0
++ vaul@1.1.2
++ z-ai-web-dev-sdk@0.0.17
++ zod@4.3.5
++ zustand@5.0.10
+
+827 packages installed [11.56s]
+==========================================
+[2026-03-16 18:06:47] Completed: bun install
+[LOG] Step: bun install | Duration: 12s
+==========================================
+
+==========================================
+[2026-03-16 18:06:47] Starting: bun run db:push
+==========================================
+[BUN] Setting up database...
+$ prisma db push
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": SQLite database "custom.db" at "file:/home/z/my-project/db/custom.db"
+
+SQLite database custom.db created at file:/home/z/my-project/db/custom.db
+
+🚀  Your database is now in sync with your Prisma schema. Done in 17ms
+
+Running generate... (Use --skip-generate to skip the generators)
+[2K[1A[2K[GRunning generate... - Prisma Client
+[2K[1A[2K[G✔ Generated Prisma Client (v6.19.2) to ./node_modules/@prisma/client in 68ms
+┌─────────────────────────────────────────────────────────┐
+│  Update available 6.19.2 -> 7.5.0                       │
+│                                                         │
+│  This is a major update - please follow the guide at    │
+│  https://pris.ly/d/major-version-upgrade                │
+│                                                         │
+│  Run the following to update                            │
+│    npm i --save-dev prisma@latest                       │
+│    npm i @prisma/client@latest                          │
+└─────────────────────────────────────────────────────────┘
+
+==========================================
+[2026-03-16 18:06:48] Completed: bun run db:push
+[LOG] Step: bun run db:push | Duration: 1s
+==========================================
+
+==========================================
+[2026-03-16 18:06:48] Starting: Starting Next.js dev server
+==========================================
+[BUN] Starting development server...
+==========================================
+$ next dev -p 3000 2>&1 | tee dev.log
+[2026-03-16 18:06:48] Completed: Starting Next.js dev server
+[LOG] Step: Starting Next.js dev server | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-16 18:06:48] Starting: Waiting for Next.js dev server
+==========================================
+Waiting for Next.js dev server to be ready on localhost:3000...
+Attempt 1/60: Next.js dev server not ready yet, waiting...
+▲ Next.js 16.1.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://21.0.3.125:3000
+- Environments: .env
+
+✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+
+  We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+  	- include was updated to add '.next/dev/types/**/*.ts'
+
+  The following mandatory changes were made to your tsconfig.json:
+
+  	- jsx was set to react-jsx (next.js uses the React automatic runtime)
+
+✓ Ready in 916ms
+ GET / 200 in 2.8s (compile: 2.7s, render: 160ms)
+Next.js dev server is ready!
+==========================================
+ GET / 200 in 2.9s (compile: 2.6s, render: 207ms)
+[2026-03-16 18:06:52] Completed: Waiting for Next.js dev server
+[LOG] Step: Waiting for Next.js dev server | Duration: 4s
+==========================================
+
+==========================================
+[2026-03-16 18:06:52] Starting: Health check
+==========================================
+[BUN] Performing health check...
+ GET / 200 in 51ms (compile: 3ms, render: 48ms)
+[BUN] Health check passed
+==========================================
+[2026-03-16 18:06:52] Completed: Health check
+[LOG] Step: Health check | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-16 18:06:52] Starting: Starting mini-services
+==========================================
+Found mini-services directory, scanning for sub-services...
+Mini-services startup completed. Started 0 service(s).
+==========================================
+[2026-03-16 18:06:52] Completed: Starting mini-services
+[LOG] Step: Starting mini-services | Duration: 0s
+==========================================
+
+Next.js dev server is running in background (PID: 326).
+Use 'kill 326' to stop it.
+✓ Compiled in 267ms
+✓ Compiled in 176ms
+ GET / 200 in 64ms (compile: 41ms, render: 23ms)
+ GET / 200 in 78ms (compile: 3ms, render: 75ms)
+✓ Compiled in 889ms
+ GET / 200 in 84ms (compile: 49ms, render: 35ms)
+✓ Compiled in 159ms
+✓ Compiled in 168ms
+ GET / 200 in 182ms (compile: 33ms, render: 149ms)
+ GET / 200 in 43ms (compile: 4ms, render: 39ms)
+✓ Compiled in 205ms
+✓ Compiled in 132ms
+⚠ Cross origin request detected from preview-chat-3a371191-c96b-4eb2-aba4-6b01301449d6.space.z.ai to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+✓ Compiled in 137ms
+ GET / 200 in 67ms (compile: 44ms, render: 23ms)
+ GET / 200 in 16ms (compile: 4ms, render: 12ms)
+ GET / 200 in 130ms (compile: 4ms, render: 127ms)
+✓ Compiled in 312ms
+✓ Compiled in 236ms
+✓ Compiled in 202ms
+ GET / 200 in 86ms (compile: 4ms, render: 81ms)
+ GET / 200 in 69ms (compile: 3ms, render: 66ms)
+ GET / 200 in 55ms (compile: 3ms, render: 52ms)
+✓ Compiled in 233ms
+ GET / 200 in 164ms (compile: 32ms, render: 132ms)
+ GET / 200 in 70ms (compile: 3ms, render: 67ms)
+✓ Compiled in 168ms
+ GET / 200 in 174ms (compile: 39ms, render: 135ms)
+✓ Compiled in 187ms
+ GET / 200 in 173ms (compile: 41ms, render: 132ms)
+✓ Compiled in 219ms
+ GET / 200 in 281ms (compile: 44ms, render: 237ms)
+ GET / 200 in 102ms (compile: 6ms, render: 96ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 14ms (compile: 2ms, render: 11ms)
+✓ Compiled in 144ms
+ GET / 200 in 53ms (compile: 39ms, render: 14ms)
+✓ Compiled in 252ms
+✓ Compiled in 253ms
+ GET / 200 in 123ms (compile: 3ms, render: 120ms)
+✓ Compiled in 187ms
+ GET / 200 in 197ms (compile: 43ms, render: 154ms)
+ GET / 200 in 54ms (compile: 3ms, render: 51ms)
+✓ Compiled in 211ms
+ GET / 200 in 190ms (compile: 40ms, render: 150ms)
+✓ Compiled in 139ms
+ GET / 200 in 174ms (compile: 41ms, render: 133ms)
+✓ Compiled in 204ms
+ GET / 200 in 187ms (compile: 40ms, render: 147ms)
+✓ Compiled in 141ms
+ GET / 200 in 158ms (compile: 35ms, render: 123ms)
+✓ Compiled in 141ms
+ GET / 200 in 198ms (compile: 42ms, render: 156ms)
+ GET / 200 in 58ms (compile: 3ms, render: 55ms)
+ GET / 200 in 62ms (compile: 3ms, render: 59ms)
+ GET / 200 in 54ms (compile: 2ms, render: 51ms)
+✓ Compiled in 154ms
+✓ Compiled in 541ms
+ GET / 200 in 48ms (compile: 33ms, render: 15ms)
+ GET / 200 in 12ms (compile: 2ms, render: 10ms)
+✓ Compiled in 139ms
+✓ Compiled in 143ms
+ GET / 200 in 54ms (compile: 32ms, render: 22ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+✓ Compiled in 208ms
+✓ Compiled in 138ms
+ GET / 200 in 177ms (compile: 30ms, render: 147ms)
+✓ Compiled in 164ms
+ GET / 200 in 205ms (compile: 37ms, render: 168ms)
+✓ Compiled in 165ms
+✓ Compiled in 0ms
+ GET / 200 in 178ms (compile: 43ms, render: 135ms)
+✓ Compiled in 177ms
+ GET / 200 in 261ms (compile: 40ms, render: 221ms)
+✓ Compiled in 174ms
+✓ Compiled in 181ms
+ GET / 200 in 185ms (compile: 40ms, render: 145ms)
+✓ Compiled in 219ms
+✓ Compiled in 178ms
+✓ Compiled in 166ms
+✓ Compiled in 159ms
+✓ Compiled in 166ms
+ GET / 200 in 267ms (compile: 54ms, render: 213ms)
+✓ Compiled in 173ms
+ GET / 200 in 214ms (compile: 46ms, render: 168ms)
+✓ Compiled in 164ms
+✓ Compiled in 0ms
+ GET / 200 in 253ms (compile: 58ms, render: 195ms)
+ GET / 200 in 68ms (compile: 2ms, render: 65ms)
+✓ Compiled in 229ms
+✓ Compiled in 198ms
+⨯ ./src/app/page.tsx:251:3
+Parsing ecmascript source code failed
+[0m [90m 249 |[39m     deliverables[33m:[39m [[32m'Custom Website'[39m[33m,[39m [32m'Mobile Responsive Design'[39m[33m,[39m [32m'CMS Integration'[39m[33m,[39m [32m'Analytics Setup'[39m[33m,[39m [32m'SEO Foundation'[39m]
+ [90m 250 |[39m   }[33m,[39m
+[31m[1m>[22m[39m[90m 251 |[39m   [32m'ui-ux-design'[39m[33m:[39m {
+ [90m     |[39m   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 252 |[39m     title[33m:[39m [32m'UI/UX Design'[39m[33m,[39m
+ [90m 253 |[39m     icon[33m:[39m [33mPalette[39m[33m,[39m
+ [90m 254 |[39m     color[33m:[39m [32m'from-brand-secondary to-brand-accent'[39m[33m,[39m[0m
+
+Unexpected token `string literal ("ui-ux-design", 'ui-ux-design')`. Expected yield, an identifier, [ or {
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+
+ GET / 500 in 994ms (compile: 894ms, render: 101ms)
+✓ Compiled in 140ms
+ GET / 200 in 198ms (compile: 46ms, render: 152ms)
+ GET / 200 in 22ms (compile: 3ms, render: 19ms)
+ GET / 200 in 73ms (compile: 4ms, render: 68ms)
+✓ Compiled in 184ms
+✓ Compiled in 220ms
+✓ Compiled in 172ms
+ GET / 200 in 71ms (compile: 47ms, render: 24ms)
+ GET / 200 in 23ms (compile: 6ms, render: 17ms)
+✓ Compiled in 168ms
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+✓ Compiled in 0ms
+ GET / 200 in 336ms (compile: 49ms, render: 288ms)
+ GET / 200 in 86ms (compile: 5ms, render: 81ms)
+ GET / 200 in 67ms (compile: 3ms, render: 63ms)
+✓ Compiled in 322ms
+✓ Compiled in 3ms
+ GET / 200 in 249ms (compile: 59ms, render: 190ms)
+ GET / 200 in 72ms (compile: 2ms, render: 70ms)
+✓ Compiled in 262ms
+✓ Compiled in 3ms
+ GET / 200 in 250ms (compile: 59ms, render: 191ms)
+ GET / 200 in 82ms (compile: 4ms, render: 78ms)
+ GET / 200 in 65ms (compile: 2ms, render: 62ms)
+ GET / 200 in 73ms (compile: 3ms, render: 69ms)
+ GET / 200 in 63ms (compile: 3ms, render: 61ms)
+ GET / 200 in 61ms (compile: 5ms, render: 56ms)
+ GET / 200 in 54ms (compile: 3ms, render: 51ms)
+ GET / 200 in 58ms (compile: 4ms, render: 54ms)
+ GET / 200 in 53ms (compile: 3ms, render: 50ms)
+ GET / 200 in 55ms (compile: 3ms, render: 51ms)
+✓ Compiled in 148ms
+✓ Compiled in 147ms
+ GET / 200 in 299ms (compile: 50ms, render: 250ms)
+ GET / 200 in 75ms (compile: 3ms, render: 72ms)
+ GET / 200 in 53ms (compile: 3ms, render: 50ms)
+ GET / 200 in 50ms (compile: 3ms, render: 48ms)
+ GET / 200 in 52ms (compile: 3ms, render: 49ms)
+✓ Compiled in 169ms
+✓ Compiled in 159ms
+ GET / 200 in 250ms (compile: 61ms, render: 189ms)
+ GET / 200 in 87ms (compile: 5ms, render: 81ms)
+ GET / 200 in 60ms (compile: 3ms, render: 58ms)
+ GET / 200 in 54ms (compile: 2ms, render: 51ms)
+✓ Compiled in 166ms
+✓ Compiled in 172ms
+ GET / 200 in 251ms (compile: 50ms, render: 201ms)
+ GET / 200 in 83ms (compile: 3ms, render: 80ms)
+ GET / 200 in 56ms (compile: 3ms, render: 54ms)
+ GET / 200 in 52ms (compile: 2ms, render: 50ms)
+ GET / 200 in 57ms (compile: 3ms, render: 54ms)
+ GET / 200 in 55ms (compile: 2ms, render: 52ms)
+✓ Compiled in 195ms
+✓ Compiled in 190ms
+ GET / 200 in 251ms (compile: 49ms, render: 202ms)
+✓ Compiled in 156ms
+✓ Compiled in 175ms
+ GET / 200 in 236ms (compile: 48ms, render: 188ms)
+ GET / 200 in 76ms (compile: 3ms, render: 73ms)
+✓ Compiled in 201ms
+✓ Compiled in 196ms
+ GET / 200 in 279ms (compile: 57ms, render: 221ms)
+✓ Compiled in 152ms
+✓ Compiled in 154ms
+ GET / 200 in 233ms (compile: 49ms, render: 184ms)
+✓ Compiled in 278ms
+✓ Compiled in 150ms
+ GET / 200 in 241ms (compile: 49ms, render: 192ms)
+✓ Compiled in 168ms
+✓ Compiled in 135ms
+ GET / 200 in 297ms (compile: 59ms, render: 238ms)
+✓ Compiled in 189ms
+ GET / 200 in 255ms (compile: 55ms, render: 200ms)
+ GET / 200 in 64ms (compile: 2ms, render: 61ms)
+✓ Compiled in 203ms
+ GET / 200 in 230ms (compile: 57ms, render: 173ms)
+ GET / 200 in 82ms (compile: 4ms, render: 77ms)
+ GET / 200 in 78ms (compile: 4ms, render: 74ms)
+✓ Compiled in 228ms
+ GET / 200 in 281ms (compile: 61ms, render: 219ms)
+ GET / 200 in 70ms (compile: 2ms, render: 67ms)
